@@ -1,0 +1,8 @@
+<% if user_signed_in? %>
+  <div class="sidenav">
+    <%= image_tag 'litify-nav-logo.png', class: "nav-logo" %>
+    <a href="#" class="menu-item">Messages</a>
+    <a href="#">My Team</a>
+    <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "Sign-Out" %>
+  </div>
+<% end %>
