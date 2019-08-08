@@ -24,11 +24,9 @@ class EmailsController < ApplicationController
   end
 
   def edit
-    render :form
   end
 
   def update
-    @email = Email.find(params[:id])
     if @email.save
       redirect_to({ action: :index }, notice: 'Email was successfully updated.')
     else
@@ -49,6 +47,6 @@ class EmailsController < ApplicationController
   end
 
   def email_params
-    params.require(:emails).permit(:subject, :body)
+    params.permit(:subject, :body)
   end
 end

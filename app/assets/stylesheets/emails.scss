@@ -4,16 +4,7 @@
 
 .form {
   &-box {
-    //width: 100px;
-    //height: 100px;
 
-    //position: absolute;
-    //top:0;
-    //bottom: 0;
-    //left: 0;
-    //right: 0;
-    //
-    //margin: auto;
   }
 
   &-heading {
@@ -23,7 +14,7 @@
   &-subject-input {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #FFFFFF;
-    width: 50%;
+    width: 40%;
     height: 2rem;
     font-size: large;
   }
@@ -31,9 +22,20 @@
   &-body-input {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #FFFFFF;
-    width: 50%;
+    width: 40%;
     height: 5rem;
     font-size: large;
+  }
+}
+
+.Email {
+  &-box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 3rem;
+    background-color: #FFFFFF;
+    height: 10rem;
+    width: 13rem;
+    display: inline-block;
   }
 }
 
