@@ -1,11 +1,5 @@
 <% cache message do %>
   <div class="message">
-    <strong>
-      <%= current_user.first_name + " " + current_user.last_name %>
-    </strong>
-    <em>
-      <%= message.created_at.strftime('%b %d %Y %l:%M %p') %>
-    </em>
-    <p><%= message.body %></p>
+    <p><%= message.body %>  <em><%= message.created_at.strftime('%b %d %Y %l:%M %p') %></em></p>
   </div>
 <% end %>

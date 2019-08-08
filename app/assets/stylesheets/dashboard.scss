@@ -6,3 +6,30 @@
   text-align: center;
   font-size: 3rem;
 }
+
+.Dashboard {
+  &-Content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-MailBox {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 3rem;
+    background-color: #FFFFFF;
+    margin: 8rem;
+    height: 10rem;
+    width: 13rem;
+    display: inline-block;
+  }
+
+  &-ChatBox {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 3rem;
+    background-color: #FFFFFF;
+    margin: 8rem;
+    height: 10rem;
+    width: 13rem;
+    display: inline-block;
+  }
+}
