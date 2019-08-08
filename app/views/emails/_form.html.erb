@@ -1,0 +1,32 @@
+<section class="section">
+  <div class="form-box">
+    <%= form_for @email, local: true do |f| %>
+
+      <div class="field">
+        <%#= f.label :subject, class: 'label' %>
+        <div class="control">
+          <%= f.text_field :subject, placeholder: f.object.class.human_attribute_name(:subject), class: 'form-subject-input' %>
+        </div>
+      </div>
+
+      <div class="field">
+        <%#= f.label :body, class: 'label' %>
+        <div class="control">
+          <%= f.text_area :body, placeholder: f.object.class.human_attribute_name(:body), rows: 2, class: 'form-body-input' %>
+        </div>
+      </div>
+
+      <div class="level-left">
+        <%= submit_tag "Save Email", class: 'button is-primary', data: {disable_with: t('form.saving')} %>
+      </div>
+
+    <% end %>
+
+
+    <%# if f.object.persisted? %>
+<!--      <div class="level-right">-->
+        <%#= link_to "Delete Email", method: :delete, class: 'button is-danger is-inverted', data: {confirm: t('.destroy.title')} do %>
+<!--      </div>-->
+    <%# end %>
+</section>
+

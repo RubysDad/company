@@ -71,7 +71,7 @@ html, body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #26bbe0;
+  background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -80,7 +80,7 @@ html, body {
   padding: 1rem 2rem;
   text-decoration: none;
   font-size: 25px;
-  color: #111;
+  color: #818181;
   display: block;
 }
 
@@ -96,4 +96,9 @@ html, body {
 .Sign-Out {
   position: fixed;
   bottom: 1rem;
+}
+
+.banner-img {
+  margin-top: 0;
+  margin-bottom: 5rem;
 }
