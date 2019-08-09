@@ -31,6 +31,10 @@ html, body {
   margin-left: 200px;
 }
 
+.wrapper {
+  margin-right: 20%;
+}
+
 .logo {
   text-align: center;
   margin-top: 5rem;
@@ -46,22 +50,44 @@ html, body {
   margin: 10rem auto 10rem auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #FFFFFF;
-  padding: 5px 0px 20px 0px; // rem instead of px
-  width: 250px;
+  padding: 5px 0px 20px 0px;
+  width: 25rem;
+  border-radius: 2rem;
   font-family: 'Lato', serif;
 }
 
+.new_user {
+  padding: 0.5rem;
+}
+
 .field {
-  padding: 5px;
+  padding: 1rem;
+}
+
+.InputField {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #FFFFFF;
+  width: 75%;
+  font-size: large;
+  margin-top: 2px;
+  margin-left: 2rem;
+  border-radius: 0.5rem;
+  padding: 2px;
 }
 
 .actions {
   padding: 5px;
 }
 
-.Log-in {
+.Login-Button {
   //background-color: #26bbe0;
-  border-radius: 5px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: large;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
 }
 
 .sidenav {
@@ -71,7 +97,7 @@ html, body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #37bad3;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -80,12 +106,12 @@ html, body {
   padding: 1rem 2rem;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #f1f1f1;
   display: block;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #818181;
 }
 
 @media screen and (max-height: 450px) {

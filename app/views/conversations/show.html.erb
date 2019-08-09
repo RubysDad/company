@@ -1,16 +1,16 @@
-<h1><%= @conversation.subject %> </h1>
+<h2 class="Conversations-Show-Heading"><%= @conversation.subject %></h2>
 
 <% @conversation.receipts_for(current_user).each do |receipt| %>
-  <div>
-    <div><%= receipt.message.sender.last_name %> commented:</div>
-    <p><%= receipt.message.body %></p>
+  <div class="Conversations-Show-Comment"><%= full_name(receipt) %> commented:</div>
+  <div class="Conversations-Show-Box">
+    <p class="Conversations-Show-Body"><%= receipt.message.body %></p>
   </div>
 <% end %>
 
 <%= form_tag conversation_emails_path(@conversation), method: :post do %>
   <div>
-    <%= text_area_tag :body %>
+    <%= text_area_tag :body, nil, placeholder: "Reply", class: "Conversations-Show-Reply" %>
   </div>
 
-  <%= submit_tag %>
+  <%= submit_tag "Send Response", class: "Conversations-Show-Button" %>
 <% end %>

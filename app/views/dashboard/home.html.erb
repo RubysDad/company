@@ -1,6 +1,6 @@
 <h1 class="Greeting">Hello <%= current_user.first_name %>!</h1>
 <div class="Dashboard-Content">
-  <%= link_to chat_room_show_path, :action => 'show' do %>
+  <%= link_to conversations_path, :action => 'index' do %>
     <div class="Dashboard-MailBox">
       <h1>View your Inbox!</h1>
     </div>

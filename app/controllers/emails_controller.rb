@@ -6,12 +6,6 @@ class EmailsController < ApplicationController
     redirect_to conversation_path(receipt.conversation)
   end
 
-  # def destroy
-  #   @email = Email.find(params[:id])
-  #   @email.destroy
-  #   redirect_to({ action: :index }, notice: 'Email was successfully destroyed')
-  # end
-
   private
 
   def set_conversation

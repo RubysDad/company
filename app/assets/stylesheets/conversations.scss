@@ -1,0 +1,134 @@
+.Conversations {
+
+  &-Header {
+    margin-top: 2rem;
+  }
+
+  &-Email {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #FFFFFF;
+    width: 75%;
+    height: 2rem;
+    font-size: x-large;
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 2rem;
+
+    a:link {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  &-New-Button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+
+  &-Time {
+    float: right;
+  }
+
+  &-Form {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0 2rem 2rem 2rem;
+    margin: 2rem;
+    background-color: #FFFFFF;
+    width: 50%;
+    border-radius: 2rem;
+  }
+
+  &-Subject {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #FFFFFF;
+    width: 75%;
+    height: 2rem;
+    font-size: large;
+    margin-top: 2rem;
+    border-radius: 5px;
+  }
+
+  &-Body {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #FFFFFF;
+    width: 75%;
+    height: 10rem;
+    font-size: large;
+    margin-top: 2rem;
+    border-radius: 5px;
+  }
+
+  &-Select {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #FFFFFF;
+    width: 75%;
+    height: 2rem;
+    font-size: large;
+    margin-top: 2rem;
+    border-radius: 5px;
+  }
+
+  &-New-Heading {
+    margin-left: 4rem;
+  }
+
+  &-Show {
+    &-Heading {
+      margin-left: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    &-Box {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding: 0 2rem 2rem 2rem;
+      margin: 2rem;
+      background-color: #FFFFFF;
+      width: 50%;
+      border-radius: 2rem;
+    }
+
+    &-Comment {
+      margin-left: 4rem;
+    }
+
+    &-Body {
+      padding-top: 3rem;
+      font-size: x-large;
+    }
+
+    &-Reply {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color: #FFFFFF;
+      width: 50%;
+      height: 10rem;
+      font-size: large;
+      margin-top: 2rem;
+      margin-left: 5rem;
+      border-radius: 5px;
+    }
+
+    &-Button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: large;
+      border-radius: 0.5rem;
+      margin-left: 5rem;
+      margin-top: 1rem;
+    }
+  }
+}

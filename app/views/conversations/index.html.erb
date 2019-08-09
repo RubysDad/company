@@ -1,9 +1,17 @@
-<h1>All Conversations</h1>
+<div class="Conversations-Header"></h1>
+  <% @conversations.each do |conversation| %>
+    <div class="Conversations-Email">
+      <%= link_to conversation_path(conversation), :action => 'show', :style=>'color:#000000;' do %>
+        <div class="Conversations-Index">
+          <%= conversation.subject %>
+          <em class="Conversations-Time">
+            <%= time_of_conversation(conversation) %>
+            <%= eastern_time_zone(conversation) %>
+          </em>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
 
-<% @conversations.each do |conversation| %>
-  <div>
-    <%= link_to conversation.subject, conversation_path(conversation) %>
-  </div>
-<% end %>
-
-<%= link_to "New Conversation", new_conversation_path %>
+<%= link_to "New Conversation", new_conversation_path, class: "Conversations-New-Button" %>
