@@ -1,5 +1,5 @@
 // Place all the styles related to the chat_room controller here.
-// They will automatically be included in application.css.
+// They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 //.Chat-Room-Wrapper {
@@ -44,4 +44,8 @@
   &-body {
 
   }
+}
+
+.fa-comments-o:before {
+  font-size: xx-large;
 }

@@ -1,7 +1,3 @@
-// Place all the styles related to the dashboard controller here.
-// They will automatically be included in application.css.scss.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 .Greeting {
   text-align: center;
   font-size: 3rem;
@@ -34,4 +30,12 @@
     width: 13rem;
     display: inline-block;
   }
+}
+
+.fa-envelope-o:before {
+  font-size: xx-large;
+}
+
+.fa-commenting-o:before {
+  font-size: xx-large;
 }

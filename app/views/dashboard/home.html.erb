@@ -3,12 +3,14 @@
   <%= link_to conversations_path, :action => 'index' do %>
     <div class="Dashboard-MailBox">
       <h1>View your Inbox!</h1>
+      <i class="fa fa-envelope-o" aria-hidden="true"></i>
     </div>
   <% end %>
 
   <%= link_to chat_room_show_path, :action => 'show' do %>
     <div class="Dashboard-ChatBox">
-      <h1>Enter into the Office Chat Room!</h1>
+      <h1>Office Chat Room!</h1>
+      <i class="fa fa-commenting-o" aria-hidden="true"></i>
     </div>
   <% end %>
 </div>
