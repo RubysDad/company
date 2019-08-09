@@ -1,5 +1,7 @@
 <% cache message do %>
   <div class="message">
-    <p><%= message.body %>  <em><%= message.created_at.strftime('%b %d %Y %l:%M %p') %></em></p>
+    <p class="message-body"><%= message.body %></p>
   </div>
+
+  <em class="message-time"><%= message.created_at.strftime('%b %d %Y %l:%M %p') %></em>
 <% end %>

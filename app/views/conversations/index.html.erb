@@ -1,4 +1,6 @@
-<div class="Conversations-Header"></h1>
+<h1 class="Conversations-Heading">Inbox</h1>
+
+<div class="Conversations-Header">
   <% @conversations.each do |conversation| %>
     <div class="Conversations-Email">
       <%= link_to conversation_path(conversation), :action => 'show', :style=>'color:#000000;' do %>

@@ -2,31 +2,46 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.Chat-Room-Wrapper {
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 2rem 10rem;
-  margin: 2rem;
-  background-color: #FFFFFF;
-}
+//.Chat-Room-Wrapper {
+//  text-align: center;
+//  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//  padding: 2rem 10rem;
+//  margin: 2rem;
+//  background-color: #FFFFFF;
+//}
 
 .heading {
-  text-align: center;
+  margin-left: 2rem;
 }
 
 .message {
-  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #FFFFFF;
+  width: 50%;
+  font-size: large;
+  padding: 1rem;
+  margin: 2rem 0 1.5rem 2rem;
+  border-radius: 2rem;
 
   &-input {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #FFFFFF;
-    width: 100%;
-    height: 2rem;
-    font-size: large;
+    width: 80%;
+    height: 3rem;
+    font-size: 1.5rem;;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    position: fixed;
+    bottom: 0;
   }
-}
 
-.message-field {
-  text-align: center;
+  &-time {
+    float: right;
+  }
 
+  &-body {
+
+  }
 }
