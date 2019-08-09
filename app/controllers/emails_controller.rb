@@ -1,37 +1,9 @@
 class EmailsController < ApplicationController
-  before_action :load_email, only: %w[show edit update destroy]
-
-  def index
-    @emails = Email.all
-    render locals: { emails: @emails }
-  end
-
-  def new
-    @email = Email.new
-    render locals: { email: @email }
-  end
+  before_action :set_conversation
 
   def create
-    @email = Email.new
-    if @email.save(email_params)
-      redirect_to({ action: :index }, notice: 'Email was successfully created.')
-    else
-      render :new, locals: { email: @email }
-    end
-  end
-
-  def show
-  end
-
-  def edit
-  end
-
-  def update
-    if @email.save
-      redirect_to({ action: :index }, notice: 'Email was successfully updated.')
-    else
-      render :index
-    end
+    receipt = current_user.reply_to_conversation(@conversation, params[:body])
+    redirect_to conversation_path(receipt.conversation)
   end
 
   # def destroy
@@ -42,11 +14,7 @@ class EmailsController < ApplicationController
 
   private
 
-  def load_email
-    @email = Email.find(params[:id])
-  end
-
-  def email_params
-    params.permit(:subject, :body)
+  def set_conversation
+    @conversation = current_user.mailbox.conversations.find(params[:conversation_id])
   end
 end
