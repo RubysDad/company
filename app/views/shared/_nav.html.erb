@@ -1,8 +1,8 @@
 <% if user_signed_in? %>
   <div class="sidenav">
     <%= link_to(image_tag('litify-nav-logo.png', class: "nav-logo"), root_path, class: "") %>
-    <%= link_to "MailBox", conversations_path %>
-    <%= link_to "Office Chat Room", chat_room_show_path, class: "menu-item" %>
+    <%= link_to "Mailbox", conversations_path %>
+    <%= link_to "Office Chat", chat_room_show_path, class: "menu-item" %>
     <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "Sign-Out" %>
   </div>
 <% end %>
