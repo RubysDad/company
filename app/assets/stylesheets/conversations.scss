@@ -85,9 +85,22 @@
     margin-left: 4rem;
   }
 
+  &-Send {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+
   &-Show {
     &-Heading {
-      margin-left: 4rem;
+      margin-left: 2rem;
       margin-bottom: 2rem;
     }
 
@@ -101,7 +114,7 @@
     }
 
     &-Comment {
-      margin-left: 4rem;
+      margin-left: 2rem;
     }
 
     &-Body {
