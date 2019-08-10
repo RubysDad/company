@@ -1,24 +1,13 @@
-# README
+# Employee Communications Portal
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Technologies used:
 
-Things you may want to cover:
+Ruby,
+Rails,
+Postgresql,
+Minitest
 
-* Ruby version
+### Setup
 
-* System dependencies
+```rails db:setup```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
