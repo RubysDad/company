@@ -14,11 +14,4 @@ class ConversationsControllerTest < ActionDispatch::IntegrationTest
     get conversations_url
     assert_response :success
   end
-
-  test 'show' do
-    conversations = mailboxer_conversations(:one)
-    get conversation_url
-    assert_response :success
-  end
-
 end
