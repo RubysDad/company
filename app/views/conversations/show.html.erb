@@ -7,7 +7,7 @@
   </div>
 <% end %>
 
-<%= form_tag conversation_emails_path(@conversation), method: :post do %>
+<%= form_tag conversation_comments_path(@conversation), method: :post do %>
   <div>
     <%= text_area_tag :body, nil, placeholder: "Reply", class: "Conversations-Show-Reply" %>
   </div>

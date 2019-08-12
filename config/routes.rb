@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   # resources :emails, only: %w[index new create show edit update]
   #
   resources :conversations do
-    resources :emails
+    resources :comments
   end
 
   resources :messages, only: [:create]

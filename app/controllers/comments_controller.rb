@@ -1,4 +1,4 @@
-class EmailsController < ApplicationController
+class CommentsController < ApplicationController
   before_action :set_conversation
 
   def create
