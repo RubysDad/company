@@ -1,8 +1,6 @@
 require 'test_helper'
 
 class ChatRoomControllerTest < ActionDispatch::IntegrationTest
-  include Devise::Test::IntegrationHelpers
-
   test 'logged out' do
     get chat_room_show_url
     assert_redirected_to new_user_session_path

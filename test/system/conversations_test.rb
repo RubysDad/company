@@ -1,8 +1,6 @@
 require 'application_system_test_case'
 
 class ConversationsTest < ApplicationSystemTestCase
-  include Devise::Test::IntegrationHelpers
-
   setup do
     Capybara.app_host = 'localhost:3000'
     user = users(:one)

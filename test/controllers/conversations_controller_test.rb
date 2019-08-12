@@ -1,8 +1,6 @@
 require 'test_helper'
 
 class ConversationsControllerTest < ActionDispatch::IntegrationTest
-  include Devise::Test::IntegrationHelpers
-
   test 'logged out' do
     get conversations_url
     assert_redirected_to new_user_session_url

@@ -1,8 +1,6 @@
 require 'application_system_test_case'
 
 class ChatRoomTest < ApplicationSystemTestCase
-  include Devise::Test::IntegrationHelpers
-
   setup do
     Capybara.app_host = 'localhost:3000'
     user = users(:one)
@@ -12,14 +10,14 @@ class ChatRoomTest < ApplicationSystemTestCase
 
   test 'visiting root path' do
     visit chat_room_show_url
-    assert_text 'Office Chat Room'
+    assert_text 'Office Chat'
   end
 
   test 'creating a message' do
     visit chat_room_show_url
-    fill_in 'Enter your name: Message', with: 'Mark Morales: Hello World'
+    fill_in 'Enter Message', with: 'Hello World'
     find('.message-input').native.send_keys(:return)
 
-    assert_text "Mark Morales: Hello World"
+    assert_text 'Hello World'
   end
 end
