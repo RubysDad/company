@@ -6,8 +6,4 @@ class ChatRoomChannel < ApplicationCable::Channel
   def unsubscribed
     # Any cleanup needed when channel is unsubscribed
   end
-
-  def message(data)
-    Message.create! body: data['message']
-  end
 end
