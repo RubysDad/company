@@ -6,6 +6,8 @@ class User < ApplicationRecord
 
   acts_as_messageable
 
+  has_many :messages
+
   def mailboxer_email(object)
     return email
   end

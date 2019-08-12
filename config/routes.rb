@@ -5,7 +5,9 @@ Rails.application.routes.draw do
     resources :emails
   end
 
+  resources :messages, only: [:create]
+  get 'chat_room/show'
   devise_for :users
-  root to: 'conversations#index'
+  root to: 'dashboard#home'
   mount ActionCable.server => '/cable'
 end

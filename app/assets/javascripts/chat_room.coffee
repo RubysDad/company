@@ -9,12 +9,3 @@ App.chat_room = App.cable.subscriptions.create "ChatRoomChannel",
 
   received: (data) ->
     $('#messages').append data['message']
-
-  message: (content) ->
-    @perform 'message', message: content
-
-$(document).on 'keypress', '[data-behavior~=chat_message]', (event) ->
-  if event.keyCode is 13
-    App.chat_room.message event.target.value
-    event.target.value = ''
-    event.preventDefault()
