@@ -18,6 +18,6 @@ class ChatRoomTest < ApplicationSystemTestCase
     fill_in 'Enter Message', with: 'Hello World'
     find('.message-input').native.send_keys(:return)
 
-    assert_text 'Hello World'
+    assert_text 'Mark Morales:'
   end
 end

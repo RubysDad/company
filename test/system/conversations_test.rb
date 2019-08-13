@@ -43,7 +43,7 @@ class ConversationsTest < ApplicationSystemTestCase
   end
 
   def create_message
-    User.create!(email: 'jmul@example.com', password: 'password', first_name: 'John', last_name: 'Mulberry')
+    User.create!(email: 'jmul@example.com', password: 'password', name: 'John Mulberry')
     click_on 'New Conversation'
 
     select 'Mulberry', from: 'user_id'

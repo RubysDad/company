@@ -1,6 +1,6 @@
 <% cache message do %>
   <div class="message-name">
-    <strong><%= message.user.first_name + " " + message.user.last_name %>:</strong><em class="message-time"> <%= message.created_at.strftime('%b %d %Y %l:%M %p') %></em>
+    <strong><%= message.user.name %>:</strong><em class="message-time"> <%= message.created_at.strftime('%b %d %Y %l:%M %p') %></em>
   </div>
 
   <div class="message">

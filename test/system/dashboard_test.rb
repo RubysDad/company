@@ -10,6 +10,6 @@ class DashboardTest < ApplicationSystemTestCase
     user = users(:one)
     sign_in(user)
     visit root_url
-    assert_text 'Hello, Mark'
+    assert_text 'Hello, Mark Morales'
   end
 end
