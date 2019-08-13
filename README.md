@@ -6,7 +6,7 @@ This portal contains direct messaging capabilities as well as a real-time office
 
 Ruby,
 Rails,
-Postgresql,
+PostgreSQL,
 Minitest
 
 ### Setup
